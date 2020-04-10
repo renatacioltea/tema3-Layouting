@@ -319,3 +319,7 @@ footer > ul > li {
   padding: 25px;
 }
 
+.contact {
+  position: absolute;
+  left: 230px;
+}
