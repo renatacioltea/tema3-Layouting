@@ -1,0 +1,321 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+  
+}
+
+header>nav>ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.main-nav li {
+  background-color: dodgerblue;
+}
+
+.main-nav li:hover, .main-nav li.active {
+  background-color: deepskyblue;
+}
+
+.main-nav li:hover a, .main-nav li.active a {
+  color: #000000;
+}
+
+.main-nav li a {
+  padding: 15px 50px;
+  color: #ffffff;
+  display: block;
+  /* or alternative below */
+  /* line-height: 40px; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* info-bar */
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 1000px;
+}
+
+.info-bar dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100px;
+  margin-right: 17px;
+}
+
+.info-bar dl dt, .info-bar dl dd {
+  height: auto; 
+  
+}
+
+.info-bar dl a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* main */
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .description {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  background-color: dodgerblue;
+  color: #ffffff;
+  padding: 5px 5px;
+}
+
+.slider  h3 {
+  padding: 5px 5px;
+  border-bottom: 1px dashed #ffffff;
+}
+
+.slider .call-to-action {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background-color: dodgerblue;
+  color: #ffffff;
+  border: 1px solid dodgerblue;
+  padding: 15px 15px;
+}
+
+.call-to-action:hover {
+  background-color: darkblue;
+}
+
+.call-to-action:active {
+  color: #000000;
+}
+
+.blog-posts {
+  width: 1000px;
+  padding: 40px 15px 13px 0px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-posts > article {
+  background-color: lightgrey;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  margin: 25px auto;
+  width: 27%;
+}
+
+.blog-posts h2 {
+  text-align:justify;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-bottom: dotted 1px grey;
+  margin: 0px 10px 10px;
+}
+
+.blog-posts p {
+  padding: 5px 0px;
+}
+
+.blog-posts img {
+ margin-right: 5px;
+ border: 5px double grey ;
+ float: left;
+}
+
+.blog-posts .last-article {
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-top: dashed 1px lightslategray;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.last-article p {
+  display : block;
+  padding: 10px 0px;
+  margin: 0px;
+  width: 90%;
+} 
+
+aside {
+ width: 600px;
+ font-size: 1.2rem;
+ line-height: 1.5rem;
+ background-color:lightgrey;  
+}
+
+aside > ul {
+  color: lightslategray;
+  font-size: 1.5rem;
+  padding: 10px 5px 5px 5px;
+  border-bottom: dashed 1px lightslategray;
+  margin: 5px;
+}
+
+aside > li {
+  padding-bottom: 10px;
+  border-bottom: solid 1px lightslategray;
+  list-style-image: url("../images/double-arrow.jpg");
+}
+
+aside a {
+  text-decoration:none;
+  color: blue;
+}
+
+.partners {
+ display: flex;
+ justify-content: space-between;
+
+}
+
+.partners img {
+  width: 174px;
+  height: 100px;
+  border: 5px double grey;
+}
+
+footer {
+  width: 206px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #ffffff;
+  background-color: dodgerblue;
+}
+
+/*Contact us page styling*/
+
+.contact-us-footer {
+  justify-content: center;
+  background-color: #ffffff;
+  width: 800px;
+  display: flex;
+}
+
+.contact-us-footer p {
+  color: black;
+  transform: translate(103%, -124%);
+  border-bottom: 1px solid lightgray;
+  padding: 5px;  
+  width: 236px;
+  max-width: 236px;
+  text-align: center;
+}
+
+.contactus-header {
+ background-color: lightgrey;
+ padding: 50px;
+ width: 100%;
+}
+
+h1 {
+  color: gray;
+  font-size: 4rem;
+}
+
+span {
+  color: #000000;
+  font-size: 4.5rem;
+}
+
+fieldset {
+  border: 1px solid#e5e5e5;
+  margin: 15px auto;
+  padding: 10px 10px;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  font-size:1.2rem;
+  position:relative;
+}
+
+input[type=text],input[type=email], textarea {
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 2px;
+  padding: 3px;
+}
+
+label {
+  display: block;
+  font-weight: bold;  
+}
+
+.message {
+  position: absolute;
+  left: 55%;
+  bottom: 18%;
+}
+
+textarea {
+  width: 200px;
+  height: 120px;
+  resize: none;
+}
+
+input[type="submit"] {
+  position: absolute;
+  bottom: -20%;
+  left: 55%;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  color: white;
+}
+
+footer > ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;   
+}
+
+footer > ul > li {
+  display: inline;
+  padding: 25px;
+}
+
